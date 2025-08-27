@@ -74,9 +74,9 @@ Function Page Load
 		setTimeout(function(){
 			$('.loadbar').append('<span class="hold-progress-bar"></span>');
 			$('body').append('<audio loop autoplay volume="0" id="audio"><source src="https://b922bde52f23a8481830-83cb7d8d544f653b52d1a1621f05ea9d.ssl.cf3.rackcdn.com/audio/MASTERqwav.mp3" type="audio/mpeg" /></audio>');
-			var audio = document.getElementById("audio");    
-			audio.volume = 0.2;
-			audio.play();
+			//var audio = document.getElementById("audio");
+			//audio.volume = 0.2;
+			//audio.play();
 			TweenMax.to($('.hold-progress-bar'), 1, {force3D:true,width:'100%', delay:0.1, ease:Power2.easeOut, onComplete:function(){
 				TweenMax.set($(".trackbar"), {visibility:'hidden', opacity:0});
 				$('body').waitForImages({
