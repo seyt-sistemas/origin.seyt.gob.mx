@@ -1097,20 +1097,30 @@
 	
 	#large-showcase-carousel .slide-cat {
 		display:block;
-		font-size: 14px;
+		/*font-size: 14px;*/
 		font-weight: 600;
 		opacity: 1;
 		line-height: 20px;
 		overflow:hidden;
 		margin-left:3px;
+		margin-bottom:5px;
 		width:100%;
+	}
+
+	#large-showcase-carousel .slide-cat h3{
+		font-size: 18px;
 	}
 
 	#large-showcase-carousel .slide-cat span {
 		position: relative;
 		display: block;
-		width:120px;
+		/*/width:120px;*/
+		font-size: 18px !important;
+		line-height: 25px;
+		text-align: left;
 	}
+
+
 	
 	.disable-click {
 		cursor: pointer;

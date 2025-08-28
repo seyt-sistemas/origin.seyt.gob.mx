@@ -1041,7 +1041,7 @@ Function Showcase
 
 			var swiperOptions = {
 				direction: "horizontal",
-				loop: false,
+				loop: true,
 				grabCursor: true,
 				resistance : true,
 				resistanceRatio : 0.6,
