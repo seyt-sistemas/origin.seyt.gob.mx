@@ -35,7 +35,14 @@
 
     <style>
 
-
+        .twoside-open a{
+            color: #FAFAFA;
+            cursor: pointer;
+            margin: 15px 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .3px;
+        }
 
     </style>
 </head>
@@ -83,9 +90,18 @@
                     <div class="twoside-open"><hr />Producción y sostenibilidad</div>
                     <div class="twoside-open"><hr />Fincas</div>
                     <div class="twoside-open"><hr />Galería</div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 1)">Norma Oficial Mexicana</a>
+                    </div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 2)">Ficha Técnica</a>
+                    </div>
                     <div class="twoside-open"><hr />
                         <a href="http://origin.seyt.gob.mx.test">Regresar</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -391,5 +407,38 @@
     <script src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCp69VyBGUlCdAAsfgcRvf3Pg57B6vNHd8'></script>
     <script src='minimal/scripts/google.maps.min.js'></script>
 </footer>
+
+<div id="pdf-container" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background: white; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <div id="pdf-viewer"></div>
+    <button onclick="cerrarFichaTecnica()" style="position: absolute; top: 10px; right: 10px; padding: 5px 10px;">Cerrar</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
+
+<script>
+    function mostrarFichaTecnica(event, type) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let file= 'ficha_tecnica_cafe.pdf';
+        // Mostrar el contenedor
+        document.getElementById('pdf-container').style.display = 'block';
+
+        // Cargar el PDF
+        if(type===1){
+            file= 'NOM-169-SCFI-2007.pdf';
+        }
+        PDFObject.embed('media/cafe/'+file, '#pdf-viewer', {
+            height: '80vh',
+            width: '90vw'
+        });
+
+
+    }
+
+    function cerrarFichaTecnica() {
+        document.getElementById('pdf-container').style.display = 'none';
+    }
+</script>
 </body>
 </html>
