@@ -49,6 +49,15 @@ TEMPLATE - TWOSIDE
     right: 0;
 }
 
+.sec-twoside .abc{
+    padding: 50px;
+    color: #EFEFEF;
+    top: 10%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 .half-side .content {
     position: relative;
     z-index: 101;
