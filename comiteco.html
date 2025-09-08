@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'code_here', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEyT | OriGIn 2025</title>
+    <meta name="description" content="Two sides template, innovative HTML web site effects and design.">
+    <script src="minimal/scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="minimal/scripts/bootstrap/css/bootstrap.css">
+    <script src="minimal/scripts/script.js"></script>
+    <link rel="stylesheet" href="minimal/style.css">
+    <link rel="stylesheet" href="minimal/css/fullpage.twoside.css">
+    <link rel="stylesheet" href='minimal/css/animations.css'>
+    <link rel="stylesheet" href='minimal/css/content-box.css'>
+    <link rel="stylesheet" href='minimal/css/components.css'>
+    <link rel="stylesheet" href='minimal/css/image-box.css'>
+    <link rel="stylesheet" href="minimal/scripts/magnific-popup.css">
+    <link rel="stylesheet" href="minimal/scripts/flexslider/flexslider.css">
+    <link rel="stylesheet" href="minimal/skin.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- Extra optional content header -->
+
+    <style>
+
+        .text-comiteco {
+            color: #2E7D32; /* Color amarillo mango */
+        }
+
+        .bg-comiteco {
+            background-color: #2E7D32 !important;
+        }
+
+
+
+        [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
+            background-color: #2E7D32 !important;
+        }
+
+        .twoside-open a{
+            color: #FAFAFA;
+            cursor: pointer;
+            margin: 15px 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .3px;
+        }
+
+        .sec-twoside .abc2 {
+            padding: 50px;
+            color: #EFEFEF;
+            top: 6%;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="background-page">
+    <div class="flexslider slider" data-options="directionNav:false,animation:fade,slideshowSpeed:5000">
+        <ul class="slides">
+            <li>
+                <div class="bg-cover" style="background-image:url('media/comiteco/bg/1.jpg')"><div class="bg-overlay line-45"></div></div>
+            </li>
+            <li>
+                <div class="bg-cover" style="background-image:url('media/comiteco/bg/2.jpg')"><div class="bg-overlay line-45"></div></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="sec-twoside">
+    <div class="row">
+
+        <div class="half-side white left">
+            <div class="content">
+                <h1 class="text-xl">
+                    <span class="text-comiteco">Comiteco</span><br />Herencia y autenticidad
+                </h1>
+                <hr class="space m" />
+                <hr class="e text-right hidden-xs" />
+                <hr class="space m" />
+                <p class="text-m">
+                    El Comiteco es una bebida tradicional con un carácter único, elaborado con el conocimiento ancestral de generaciones.
+                    Este destilado refleja la esencia de la tierra chiapaneca, combinando historia, cultura y orgullo en cada sorbo.
+                    Más que una bebida, es un legado que enaltece las raíces de Chiapas.
+                </p>
+                <hr class="space" />
+                <a href="#" class="btn btn-sm hidden-xs" onclick="openSection(0)">Iniciar</a>
+            </div>
+        </div>
+
+        <div class="half-side right">
+            <div class="content">
+                <div id="twosides-menu" class="bg-mango">
+                    <div class="twoside-open"><hr />Galería</div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 1)">Reglas de uso</a>
+                    </div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 2)">Estudio tecnico</a>
+                    </div>
+                    <div class="twoside-open"><hr />
+                        <a href="http://origin.seyt.gob.mx.test">Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="twosides-main">
+
+
+
+
+            <!--Galería-->
+            <div class="section white center-box">
+                <div class="abc2">
+                    <h1 class="text-xl">
+                        Galería
+                    </h1>
+                    <hr class="space m">
+                    <div class="scroll-content scroll-mobile-disabled" data-height="520" data-options=" ">
+                        <div class="grid-list gallery">                            
+                            <div class="grid-box row" data-lightbox-anima="show-scale">
+
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/comiteco/1.jpg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/comiteco/1.jpg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/comiteco/2.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/comiteco/2.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="center-bg"></div>
+        <div class="close-button"></div>
+    </div>
+</div>
+<footer class="footer-center footer-minimal">
+    <link rel="stylesheet" href="minimal/scripts/iconsmind/line-icons.min.css">
+    <script async src="minimal/scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="minimal/scripts/flexslider/jquery.flexslider-min.js"></script>
+    <script src="minimal/scripts/fullpage.twoside.js"></script>
+    <script src='minimal/scripts/jquery.slimscroll.min.js'></script>
+    <script src='minimal/scripts/jquery.progress-counter.js'></script>
+    <script src="minimal/scripts/jquery.magnific-popup.min.js"></script>
+    <script src='minimal/scripts/jquery.twbsPagination.min.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCp69VyBGUlCdAAsfgcRvf3Pg57B6vNHd8'></script>
+    <script src='minimal/scripts/google.maps.min.js'></script>
+</footer>
+
+<div id="pdf-container" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background: white; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <div id="pdf-viewer"></div>
+    <button onclick="cerrarFichaTecnica()" style="position: absolute; top: 10px; right: 10px; padding: 5px 10px;">Cerrar</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
+
+<script>
+    function mostrarFichaTecnica(event, type) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let file= 'estudio-tecnico.pdf';
+        // Mostrar el contenedor
+        document.getElementById('pdf-container').style.display = 'block';
+
+        // Cargar el PDF
+        if(type===1){
+            file= 'reglas-uso.pdf';
+        }
+        PDFObject.embed('media/comiteco/'+file, '#pdf-viewer', {
+            height: '80vh',
+            width: '90vw'
+        });
+
+
+    }
+
+    function cerrarFichaTecnica() {
+        document.getElementById('pdf-container').style.display = 'none';
+    }
+</script>
+</body>
+</html>

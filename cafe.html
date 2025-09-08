@@ -44,6 +44,15 @@
             letter-spacing: .3px;
         }
 
+        .sec-twoside .abc2 {
+            padding: 50px;
+            color: #EFEFEF;
+            top: 6%;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -97,6 +106,14 @@
                     <div class="twoside-open">
                         <hr />
                         <a href="#" onclick="mostrarFichaTecnica(event, 2)">Ficha Técnica</a>
+                    </div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 3)">Reglas de uso IG</a>
+                    </div>
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 4)">Estudio tecnico IG</a>
                     </div>
                     <div class="twoside-open"><hr />
                         <a href="http://origin.seyt.gob.mx.test">Regresar</a>
@@ -270,13 +287,13 @@
 
             <!--Galería-->
             <div class="section white center-box">
-                <div class="abc">
+                <div class="abc2">
                     <h1 class="text-xl">
                         Galería
                     </h1>
                     <hr class="space m">
                     <!--<div class="scroll-content scroll-mobile-disabled" data-height="365" data-options=" ">-->
-                    <div class="scroll-content scroll-mobile-disabled" data-height="500" data-options=" ">
+                    <div class="scroll-content scroll-mobile-disabled" data-height="520" data-options=" ">
                         <div class="grid-list gallery">
                             <div class="grid-box row" data-lightbox-anima="show-scale">
                                 <div class="grid-item col-md-4">
@@ -438,6 +455,12 @@
         // Cargar el PDF
         if(type===1){
             file= 'NOM-169-SCFI-2007.pdf';
+        }
+        if(type===3){
+            file= 'reglas-uso.pdf';
+        }
+        if(type===4){
+            file= 'estudio-tecnico.pdf';
         }
         PDFObject.embed('media/cafe/'+file, '#pdf-viewer', {
             height: '80vh',
