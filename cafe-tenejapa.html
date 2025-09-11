@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'code_here', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEyT | OriGIn 2025</title>
+    <meta name="description" content="Two sides template, innovative HTML web site effects and design.">
+    <script src="minimal/scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="minimal/scripts/bootstrap/css/bootstrap.css">
+    <script src="minimal/scripts/script.js"></script>
+    <link rel="stylesheet" href="minimal/style.css">
+    <link rel="stylesheet" href="minimal/css/fullpage.twoside.css">
+    <link rel="stylesheet" href='minimal/css/animations.css'>
+    <link rel="stylesheet" href='minimal/css/content-box.css'>
+    <link rel="stylesheet" href='minimal/css/components.css'>
+    <link rel="stylesheet" href='minimal/css/image-box.css'>
+    <link rel="stylesheet" href="minimal/scripts/magnific-popup.css">
+    <link rel="stylesheet" href="minimal/scripts/flexslider/flexslider.css">
+    <link rel="stylesheet" href="minimal/skin.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- Extra optional content header -->
+
+    <style>
+
+        .text-tenejapa {
+            color: #8B4513; /* Color amarillo ambar */
+        }
+
+        .bg-tenejapa {
+            background-color: #8B4513 !important;
+        }
+
+
+
+        [class*="col-md-"].boxed, .bg-color, .fa-angle-up.scroll-top, .niche-box-post.boxed .block-infos, .call-action-box, .white .img-box.adv-img-half-content .caption, .header-bootstrap {
+            background-color: #8B4513 !important;
+        }
+
+        .twoside-open a{
+            color: #FAFAFA;
+            cursor: pointer;
+            margin: 15px 0px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .3px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="background-page">
+    <div class="flexslider slider" data-options="directionNav:false,animation:fade,slideshowSpeed:5000">
+        <ul class="slides">
+            <li>
+                <div class="bg-cover" style="background-image:url('media/cafe-tenejapa/bg/1.jpg')"><div class="bg-overlay line-45"></div></div>
+            </li>
+            <li>
+                <div class="bg-cover" style="background-image:url('media/cafe-tenejapa/bg/2.jpg')"><div class="bg-overlay line-45"></div></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="sec-twoside">
+    <div class="row">
+
+        <div class="half-side white left">
+            <div class="content">
+                <h1 class="text-xl">
+                    <span class="text-tenejapa">Café de Tenejapa</span><br />Historia y orgullo
+                </h1>
+                <hr class="space m" />
+                <hr class="e text-right hidden-xs" />
+                <hr class="space m" />
+                <p class="text-m">
+                    El Café de Tenejapa es símbolo de identidad tzeltal. Cultivado en lo alto de las montañas de Chiapas,
+                    combina tradición, sabor único y orgullo comunitario en cada taza.
+                </p>
+                <hr class="space" />
+                <a href="#" class="btn btn-sm hidden-xs" onclick="openSection(0)">Iniciar</a>
+            </div>
+        </div>
+
+
+
+        <div class="half-side right">
+            <div class="content">
+                <div id="twosides-menu" class="bg-tenejapa">
+                    <div class="twoside-open"><hr />Indicación Geográfica</div>
+<!--                    <div class="twoside-open"><hr />Fincas</div>-->
+                    <div class="twoside-open"><hr />Galería</div>
+
+                    <div class="twoside-open">
+                        <hr />
+                        <a href="#" onclick="mostrarFichaTecnica(event, 2)">Ficha Técnica</a>
+                    </div>
+                    <div class="twoside-open"><hr />
+                        <a href="http://origin.seyt.gob.mx.test">Regresar</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="twosides-main">
+
+            <!--Denominación de Origen-->
+            <div class="section center-box">
+                <div class="content">
+
+                    <h1 class="text-xl" style="color:#FFF">
+                        Denominación de Origen
+                    </h1>
+                    <hr class="space m">
+
+                    <div class="scroll-content scroll-mobile-disabled" data-height="800" data-options=" ">
+
+                        <p class="text-m text-justify">
+                            <br><br>
+                            <span class="text-tenejapa">En lo alto de las montañas de Chiapas, el Café de Tenejapa</span> nace como herencia
+                            viva del pueblo tzeltal. Más que una bebida, es memoria y tradición, fruto de
+                            generaciones que aprendieron a cultivar dialogando con la naturaleza. Bajo la
+                            sombra de guamos y frutales crece un café que encierra aromas frescos, acidez
+                            brillante y sabores dulces con matices de miel, nueces y chocolate. Cada taza es
+                            relato de identidad, resistencia y orgullo comunitario.
+                        </p>
+
+                        <hr class="space" />
+
+                        <div class="row">
+                            <div class="col-md-6 boxed white">
+                                <div class="icon-background">
+                                    <div>
+                                        <h2>Historia y tradición</h2>
+                                        <hr class="space m" />
+                                        <p class="text-justify">
+                                            Su historia se remonta a inicios del siglo XX, cuando familias indígenas de Tenejapa
+                                            migraron a las fincas del Soconusco y trajeron consigo las primeras semillas de
+                                            arábica. Con el reparto agrario de los años treinta, el café se expandió y se integró
+                                            a la milpa y a la cosmovisión maya. Desde entonces, el cultivo se consolidó como
+                                            motor de vida y vínculo social: en los fogones reúne a la familia, en las cosechas
+                                            convoca a la comunidad y en las fiestas se comparte como símbolo de hospitalidad.
+                                        </p>
+                                    </div>
+                                    <i class="fa fa-leaf i-background" style="font-size: 235px; margin-top: 65px;"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 boxed-inverse">
+                                <div class="icon-background">
+                                    <div>
+                                        <h2>Corazón económico</h2>
+                                        <hr class="space m" />
+                                        <p class="text-justify">
+                                            Hoy, el “Café de Tenejapa, Chiapas”, es el corazón económico del municipio.
+                                            Producido de manera orgánica y artesanal, alcanza puntajes de especialidad
+                                            reconocidos por la Specialty Coffee Association, lo que le ha abierto paso en
+                                            mercados internacionales. Sin embargo, su mayor riqueza está en casa: en las
+                                            familias que lo cultivan sin renunciar a su lengua, su traje tradicional ni su
+                                            cosmovisión.
+                                        </p>
+                                    </div>
+                                    <i class="fa fa-coffee i-background" style="font-size: 235px; margin-top: 65px;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="space" />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    En reconocimiento a este gran esfuerzo, la Secretaría de Economía
+                                    y del Trabajo de Chiapas, haciendo equipo con productores y asociaciones,
+                                    impulsan ante el Instituto Mexicano de la Propiedad Industrial (IMPI),
+                                    el distintivo de Indicación Geográfica Protegida “Café de Tenejapa, Chiapas”.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Este distintivo otorgará certificación de calidad, protección y valor
+                                    a este producto único y permitirá que cada taza lleve no solo sabor,
+                                    sino también identidad y orgullo comunitario.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+<!--            &lt;!&ndash;Fincas&ndash;&gt;-->
+<!--            <div class="section center-box">-->
+<!--                <div class="content">-->
+
+<!--                    <h1 class="text-xl" style="color:#FFF">-->
+<!--                        Fincas-->
+<!--                    </h1>-->
+<!--                    <hr class="space m">-->
+<!--                    <p>-->
+<!--                        Estas fincas, muchas de ellas creadas en colaboración con comunidades indígenas, se convirtieron en motores de desarrollo local y ejemplos de producción sostenible. Entre las más reconocidas están Hamburgo, Irlanda, Argovia y San Francisco en el Soconusco, así como El Triunfo, La Primavera, La Chorrera y la emblemática Finca Santa Cruz en la región Norte Centro.-->
+<!--                    </p>-->
+<!--                    <hr class="space m">-->
+<!--                    <div class="scroll-content scroll-mobile-disabled" data-height="365" data-options=" ">-->
+<!--                        <div class="grid-list gallery">-->
+<!--                            <div class="grid-box row" data-lightbox-anima="show-scale">-->
+<!--                                <div class="grid-item col-md-4">-->
+<!--                                    <a class="img-box thumbnail mfp-iframe i-center img-scale-up"-->
+<!--                                       href="https://www.youtube.com/watch?v=m14Eq7S9InU">-->
+<!--                                        <span style="display: block; padding-bottom: 100%; position: relative;">-->
+<!--                                            <i class="fa fa-play"></i>-->
+<!--                                            <img src="https://img.youtube.com/vi/m14Eq7S9InU/0.jpeg" alt=""-->
+<!--                                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"/>-->
+<!--                                        </span>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="grid-item col-md-4">-->
+<!--                                    <a class="img-box thumbnail mfp-iframe i-center img-scale-up"-->
+<!--                                       href="https://www.youtube.com/watch?v=3r_6neJIM-o">-->
+<!--                                        <span style="display: block; padding-bottom: 100%; position: relative;">-->
+<!--                                            <i class="fa fa-play"></i>-->
+<!--                                            <img src="https://img.youtube.com/vi/3r_6neJIM-o/0.jpeg" alt=""-->
+<!--                                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"/>-->
+<!--                                        </span>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+
+            <!--Galería-->
+            <div class="section white center-box">
+                <div class="abc2">
+                    <h1 class="text-xl">
+                        Galería
+                    </h1>
+                    <hr class="space m">
+                    <div class="scroll-content scroll-mobile-disabled" data-height="520" data-options=" ">
+                        <div class="grid-list gallery">
+                            <div class="grid-box row" data-lightbox-anima="show-scale">
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/1.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/1.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/2.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/2.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/3.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/3.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/4.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/4.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/5.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/5.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/6.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/6.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/7.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/7.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/8.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/8.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/9.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/9.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/10.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/10.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/11.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/11.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/12.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/12.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/13.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/13.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/14.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/14.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/15.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/15.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/16.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/16.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/17.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/17.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/18.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/18.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/19.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/19.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/20.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/20.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/21.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/21.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/22.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/22.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <a class="img-box thumbnail i-center img-scale-up" href="media/cafe-tenejapa/23.jpeg">
+                    <span style="display: block; padding-bottom: 100%; position: relative;">
+                        <i class="fa fa-camera"></i>
+                        <img src="media/cafe-tenejapa/23.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                    </span>
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="center-bg"></div>
+        <div class="close-button"></div>
+    </div>
+</div>
+<footer class="footer-center footer-minimal">
+    <link rel="stylesheet" href="minimal/scripts/iconsmind/line-icons.min.css">
+    <script async src="minimal/scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="minimal/scripts/flexslider/jquery.flexslider-min.js"></script>
+    <script src="minimal/scripts/fullpage.twoside.js"></script>
+    <script src='minimal/scripts/jquery.slimscroll.min.js'></script>
+    <script src='minimal/scripts/jquery.progress-counter.js'></script>
+    <script src="minimal/scripts/jquery.magnific-popup.min.js"></script>
+    <script src='minimal/scripts/jquery.twbsPagination.min.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCp69VyBGUlCdAAsfgcRvf3Pg57B6vNHd8'></script>
+    <script src='minimal/scripts/google.maps.min.js'></script>
+</footer>
+
+<div id="pdf-container" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background: white; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+    <div id="pdf-viewer"></div>
+    <button onclick="cerrarFichaTecnica()" style="position: absolute; top: 10px; right: 10px; padding: 5px 10px;">Cerrar</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
+
+<script>
+    function mostrarFichaTecnica(event, type) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        let file= 'ficha_tecnica_cafe.pdf';
+        // Mostrar el contenedor
+        document.getElementById('pdf-container').style.display = 'block';
+
+        // Cargar el PDF
+        if(type===1){
+            file= 'NOM-169-SCFI-2007.pdf';
+        }
+        PDFObject.embed('media/cafe-tenejapa/'+file, '#pdf-viewer', {
+            height: '80vh',
+            width: '90vw'
+        });
+
+
+    }
+
+    function cerrarFichaTecnica() {
+        document.getElementById('pdf-container').style.display = 'none';
+    }
+</script>
+</body>
+</html>
